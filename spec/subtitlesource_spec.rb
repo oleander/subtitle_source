@@ -46,6 +46,12 @@ describe Subtitlesource do
       end
       
       did_request?("xmlsearch/0813715/imdb/0")
+      
+      VCR.use_cassette("imdb-0813715-page-2") do
+        @s.page(2).imdb("tt0813715").fetch
+      end
+      
+      did_request?("xmlsearch/0813715/imdb/20")
     end
     
     it "should be possible to set a page" do
