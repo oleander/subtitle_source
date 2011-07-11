@@ -18,4 +18,12 @@ describe Subtitlesource do
     
     a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/heroes/english/0").should have_been_made.once
   end
+  
+  it "should be possible to search for a query with whitespace" do
+    VCR.use_cassette("prison-break-english") do
+      @s.query("prison break").language("Swedish").fetch
+    end
+    
+    a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/prison%20break/swedish/0").should have_been_made.once
+  end
 end

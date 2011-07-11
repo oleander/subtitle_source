@@ -1,4 +1,6 @@
 require "rest_client"
+require "uri"
+
 class Subtitlesource
   attr_reader :api_key
   
@@ -10,7 +12,7 @@ class Subtitlesource
   end
   
   def query(query)
-    tap { @query = query }
+    tap { @query = URI.escape(query) }
   end
   
   def language(language)
