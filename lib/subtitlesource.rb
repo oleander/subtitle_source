@@ -1,4 +1,5 @@
 require "rest_client"
+require "subtitlesource/array"
 require "nokogiri"
 require "uri"
 
@@ -60,7 +61,7 @@ class Subtitlesource
         :url
       )
       
-      Nokogiri::XML(get).css("subtitlesource xmlsearch sub").map do |sub|
+      subtitles = Nokogiri::XML(get).css("subtitlesource xmlsearch sub").map do |sub|
         subtitle.new(
           sub.at_css("title").content, 
           "tt#{sub.at_css("imdb").content}",
@@ -77,6 +78,8 @@ class Subtitlesource
           "http://www.subtitlesource.org/download/zip/#{sub.at_css("id").content}"
         )
       end
+      
+      SubtitlesourceModule::Subtitles.new(subtitles)
     end
     
     def get

@@ -86,7 +86,7 @@ describe Subtitlesource do
     it "should return 20 subtitles" do
       fetch = @s.imdb("0813715").fetch
       fetch.count.should eq(20)
-      fetch.should be_instance_of(Array)
+      fetch.should be_instance_of(SubtitlesourceModule::Subtitles)
       fetch.first.title.should be_instance_of(String)
       fetch.first.imdb.should be_instance_of(String)
       fetch.first.id.should be_instance_of(Fixnum)
