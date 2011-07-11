@@ -44,7 +44,7 @@ class Subtitlesource
   private
     
     def content
-      subtitle = Struct.new(:title, :imdb, :id, :rid, :language, :season, :episode, :releasename, :fps, :cd, :hi)
+      subtitle = Struct.new(:title, :imdb, :id, :rid, :language, :season, :episode, :releasename, :fps, :cd, :hi, :details)
       Nokogiri::XML(get).css("subtitlesource xmlsearch sub").map do |sub|
         subtitle.new(
           sub.at_css("title").content, 
@@ -58,6 +58,7 @@ class Subtitlesource
           sub.at_css("fps").content.to_i,
           sub.at_css("cd").content.to_i,
           sub.at_css("hi").content.to_i,
+          "http://www.subtitlesource.org/subs/#{sub.at_css("id").content}/#{sub.at_css("releasename").content}"
         )
       end
     end

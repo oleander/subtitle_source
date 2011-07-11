@@ -103,5 +103,17 @@ describe Subtitlesource do
     it "should return the correct imdb id" do
       @s.imdb("0813715").fetch.first.imdb.should eq("tt0813715")
     end
+    
+    it "should be able to generate an details link" do
+      sub = @s.imdb("0813715").fetch.first
+      
+      VCR.use_cassette("0813715-details") do
+        lambda {
+          RestClient.get(sub.details)
+        }.should_not raise_error
+      end
+      
+      a_request(:get, "http://www.subtitlesource.org/subs/#{sub.id}/#{sub.releasename}").should have_been_made.once      
+    end
   end
 end

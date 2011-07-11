@@ -1,0 +1,368 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.subtitlesource.org:80/subs/58699/Heroes.S04E19.720p.HDTV.X264-DIMENSION
+    body: 
+    headers: 
+      accept: 
+      - "*/*; q=0.5, application/xml"
+      accept-encoding: 
+      - gzip, deflate
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Mon, 11 Jul 2011 14:23:52 GMT
+      server: 
+      - Apache
+      x-powered-by: 
+      - PHP/5.3.6
+      expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma: 
+      - no-cache
+      set-cookie: 
+      - PHPSESSID=1da199c2d4649dd5773bcaae4d550866; path=/
+      - phpbb3_s6tmy_k=; expires=Tue, 10-Jul-2012 14:23:52 GMT; path=/; domain=.subtitlesource.org; HttpOnly
+      - phpbb3_s6tmy_sid=a332ddb67be130872811899139344db7; expires=Tue, 10-Jul-2012 14:23:52 GMT; path=/; domain=.subtitlesource.org; HttpOnly
+      - phpbb3_s6tmy_u=1; expires=Tue, 10-Jul-2012 14:23:52 GMT; path=/; domain=.subtitlesource.org; HttpOnly
+      transfer-encoding: 
+      - chunked
+      content-type: 
+      - text/html; charset=utf-8
+    body: |
+      <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+      <html lang="en">
+      <head>
+      <title>Heroes 4x19 DIMENSION undertexter - SubtitleSource</title>
+      <meta name="verify-v1" content="+f2li6lY32KIxy05WwSLfS8od2CwEb2SrV0ox64WHJg=" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Language" content="en-GB" />
+      <meta HTTP-EQUIV=REFRESH CONTENT=300 />
+      <meta name="description" content="Heroes svenska undertexter
+      Swedish subtitles Heroes.S04E19.720p.HDTV.X264-DIMENSION" />
+      <meta name="keywords" content="svenska,undertexter, Heroes, Heroes.S04E19.720p.HDTV.X264-DIMENSION, subtitles, subtitle, subs, Swedish" />
+      <link rel="alternate" href="http://www.subtitlesource.org/latest" type="text/html" title="Latest" />
+      <link rel="alternate" title="SubtitleSource RSS Feed" href="http://www.subtitlesource.org/rss/813715/swedish" type="application/rss+xml" /><link rel="search" type="application/opensearchdescription+xml" title="SubtitleSource Search" href="http://www.subtitlesource.org/subtitlesource.xml">
+      <link type="text/css" rel="stylesheet" href="http://www.subtitlesource.org/subtitlesource_2.1.css" />
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script type="text/javascript" src="http://www.subtitlesource.org/src/adapter/shadowbox-base.js"></script>
+      <script type="text/javascript" src="http://www.subtitlesource.org/src/shadowbox.js"></script>
+      <script src="http://www.subtitlesource.org/subtitlesource_2.1.js"></script>
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-4180459-13");
+      pageTracker._trackPageview();
+      } catch(err) {}</script>
+      
+      <!-- PUT THIS TAG IN THE head SECTION -->
+      <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+      </script>
+      <script type='text/javascript'>
+      GS_googleAddAdSenseService("ca-pub-1765042858221475");
+      GS_googleEnableAllServices();
+      </script>
+      <script type='text/javascript'>
+      
+      GA_googleAddSlot("ca-pub-1765042858221475", "SubtitleSource_250x360_1");
+      GA_googleAddSlot("ca-pub-1765042858221475", "SubtitleSource_250x360_2");
+      GA_googleAddSlot("ca-pub-1765042858221475", "SubtitleSource_250x360_3");
+      GA_googleAddSlot("ca-pub-1765042858221475", "SubtitleSource_728x90_BOTTOM");
+      GA_googleAddSlot("ca-pub-1765042858221475", "SubtitleSource_728x90_TOP");
+      </script>
+      <script type='text/javascript'>
+      GA_googleFetchAds();
+      </script>
+      <!-- END OF TAG FOR head SECTION -->
+      
+      </head>
+      
+      <body>
+      
+      <div id="container">
+      
+      <div id="ads">
+      
+      <script language=JavaScript src="http://cperspective.rotator.hadj7.adjuggler.net/servlet/ajrotator/75649/0/vj?z=cperspective&dim=75456&kw=&click="></script><noscript>
+      <a href="http://cperspective.rotator.hadj7.adjuggler.net/servlet/ajrotator/75649/0/cc?z=cperspective">
+      <img src="http://cperspective.rotator.hadj7.adjuggler.net/servlet/ajrotator/75649/0/vc?z=cperspective&dim=75456&kw=&click=&abr=$imginiframe" width="1" height="1" border="0"></a></noscript>
+      
+      	<div class="ad">
+      		<!-- SubtitleSource_250x360_1 -->
+      			<script type="text/javascript">
+      			  GA_googleFillSlot("SubtitleSource_250x360_1");
+      			</script>
+      		<!-- END SubtitleSource_250x360_1 -->
+      	</div>
+      
+      	<div class="ad">
+      		<!-- SubtitleSource_250x360_2 -->
+      		<script type="text/javascript">
+      		  GA_googleFillSlot("SubtitleSource_250x360_2");
+      		</script>
+      		<!-- END SubtitleSource_250x360_2 -->
+      	</div>
+      
+      	<div class="ad">
+      		<!-- SubtitleSource_250x360_3 -->
+      			<script type="text/javascript">
+      			  GA_googleFillSlot("SubtitleSource_250x360_3");
+      			</script>
+      		<!-- END SubtitleSource_250x360_3 -->
+      	</div>
+      	
+      
+      
+      </div>
+      
+      
+      <div id="header">
+      	<div id="logo">
+      		<a href="http://www.subtitlesource.org" title="SubtitleSource - Your source for subtitles">
+      		<img src="http://www.subtitlesource.org/images/logo2.jpg" alt="SubtitleSource">
+      		</a>
+      	</div>
+      
+      
+      
+      <div class="menu">
+      	<div class="menu-left"></div>
+      	<ul class="menu-links">
+      		<li><a href="http://www.subtitlesource.org/latest" title="Latest subtitles">Latest</a></li>
+      		<li><a href="http://www.subtitlesource.org/upload" title="Upload subtitles">Upload</a></li>
+      		<li><a href="http://www.subtitlesource.org/request" title="Request subtitles">Request</a></li>
+      		<li><a href="http://www.subtitlesource.org/forum/" title="Forum">Forum</a></li>
+      		<li><a href="http://www.subtitlesource.org/help" title="FAQ">Help</a></li>
+      	</ul>
+      	<div class="menu-right"></div>
+      </div>
+      
+      <div class="menu">
+      	<div class="menu-left"></div>
+      	<ul class="menu-links">
+      				<li><a href="http://www.subtitlesource.org/forum/ucp.php?mode=login" title="Login at SubtitleSource">Login</a></li>
+      			</ul>
+      	<div class="menu-right"></div>
+      </div>
+      
+      
+      <div class="menu">
+      	<div class="menu-left"></div>
+      	<ul class="menu-links">
+      		<li><a href="http://www.subtitlesource.org/tv" title="TV Schedule">TV</a></li>
+      	</ul>
+      	<div class="menu-right"></div>
+      </div>
+      
+      </div>
+      
+      
+      
+      <div id="search_div">
+      	<form method="get" action="http://www.subtitlesource.org/search.php" />
+      		<div>
+      			<img src="http://www.subtitlesource.org/images/search_icon.png" id="search_icon" alt="search" />
+      			<input type="text" name="q" id="search_field" autocomplete="off" />
+      			<input type="submit" value="Search " id="search_button" />
+      		</div>
+      	</form>
+      	<br class="clear" />
+      	<div id="ajax_box"></div>
+      </div>
+      
+      <div id="topbanner">
+      	<!-- SubtitleSource_728x90_TOP -->
+      	<script type="text/javascript">
+      	  GA_googleFillSlot("SubtitleSource_728x90_TOP");
+      	</script>
+      	<!-- END SubtitleSource_728x90_TOP -->
+      </div>
+      
+      <br class="clear" />
+      
+      <div id="content-container">
+      <div class="content-header"><div id="breadcrumb"><div style="width: 600px; height: 20px; overflow: hidden;float:left;text-align:left;word-wrap: break-word;"><a href="http://www.subtitlesource.org/title/tt0813715" title="Heroes subtitles">Heroes S04E19</a> &raquo; <a href="http://www.subtitlesource.org/release/30041/Heroes.S04E19.720p.HDTV.X264-DIMENSION" title="Heroes.S04E19.720p.HDTV.X264-DIMENSION  ">Heroes S04E19 720p HDTV X264-DIMENSION</a></div><div><a href="http://www.subtitlesource.org/subs/57760/Heroes.S04E19.720p.HDTV.X264-DIMENSION" title="Heroes 4x19 DIMENSION undertexter English subtitles">
+      			<img src="../../images/english.gif" alt="English" ></a> </div></div></div>
+      <div class="content"><div class="content-footer"></div></div><a href="http://www.subtitlesource.org/title/tt0813715" alt="Heroes" title="Heroes"><img src="http://www.subtitlesource.org/images/poster/0813715.jpg" id="poster"></a>
+      <div id="subtitle-information-box">
+      <div id="subtitle-information-top"></div>
+      <div id="subtitle-information-center">
+      <div id="subtitle-information-padding">
+      <script type="text/javascript"><!--
+      google_ad_client = "ca-pub-3456872095325034";
+      /* Subtitlesource-search */
+      google_ad_slot = "6254608855";
+      google_ad_width = 234;
+      google_ad_height = 60;
+      //-->
+      </script>
+      <script type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+      <div id="download2"><a href="../../download/zip/58699" rel="nofollow" title="Ladda ner">
+      <img src="../../images/icon_download2.jpg" alt="Ladda ner" title="Ladda ner"></a><br><script type="text/javascript"><!--
+      google_ad_client = "ca-pub-3456872095325034";
+      /* Subtitlesource-search */
+      google_ad_slot = "6254608855";
+      google_ad_width = 234;
+      google_ad_height = 60;
+      //-->
+      </script>
+      <script type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script></br>
+      
+      
+      <!--/* OpenX Javascript Tag v2.8.2-rc25 */-->
+      
+      <script type='text/javascript'><!--//<![CDATA[
+         var m3_u = (location.protocol=='https:'?'https://d1.openx.org/ajs.php':'http://d1.openx.org/ajs.php');
+         var m3_r = Math.floor(Math.random()*99999999999);
+         if (!document.MAX_used) document.MAX_used = ',';
+         document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+         document.write ("?zoneid=94689&amp;target=_blank");
+         document.write ('&amp;cb=' + m3_r);
+         if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+         document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+         document.write ("&amp;loc=" + escape(window.location));
+         if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+         if (document.context) document.write ("&context=" + escape(document.context));
+         if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+         document.write ("'><\/scr"+"ipt>");
+      //]]>--></script>
+      
+      
+      </div>
+      
+      <h1 id="subtitle-information"><span>Svenska undertexter</span> Heroes <span>4x19</span> </h1><h3 id="subtitle-information"><img src="http://www.subtitlesource.org/images/nfo.gif" alt="Release">  <a href="../../release/30041/Heroes.S04E19.720p.HDTV.X264-DIMENSION" title="Heroes.S04E19.720p.HDTV.X264-DIMENSION subtitles">Heroes.S04E19.720p.HDTV.X264-DIMENSION</a></h3>
+      </div></div><div id="subtitle-information-bottom"></div></div>
+      
+      
+      
+      <div id="subtitle-information-box">
+      <div id="subtitle-information-top"></div>
+      <div id="subtitle-information-center">
+      <div id="subtitle-information-padding">
+      
+      <img src="http://www.subtitlesource.org/images/nohi_small.gif" alt="No Hearing Impaired"> &nbsp; <img src="http://www.subtitlesource.org/images/swedish.gif" alt="Swedish" title="Swedish / svenska"> &nbsp; <strong><img src="http://www.subtitlesource.org/images/cd1.png"> 1 File(s)</strong><br /><ul id="files"><li id="file_d" onmouseover="this.className='tran'" onmouseout="this.className=''"><img src="http://www.subtitlesource.org/images/file.gif"> <a href="../../download/text/58699/1" title="Download Heroes.S04E19.720p.HDTV.X264-DIMENSION.srt" style="color: #666;font-size: 8pt;">Heroes.S04E19.720p.HDTV.X264-DIMENSION.srt</a>&nbsp;&nbsp;<a rel="shadowbox;width=210;height=450" class="option" title="Preview CD1" href="../../preview/58699/1">Preview CD1</a></li></ul></div></div><div id="subtitle-information-bottom"></div></div>
+      
+      
+      <div style="float:left;"><form action="../../request" method="POST" name="submit">
+      <input type="hidden" name="imdb" value="0813715">
+      <input type="hidden" name="rid" value="30041">
+        <select name="languageselect" onchange="this.form.submit();" style="margin-top: 4px;">
+          <option>Request</option><option value="Danish">Danish</option><option value="Norwegian">Norwegian</option><option value="Finnish">Finnish</option><option value="Icelandic">Icelandic</option><option value="Spanish">Spanish</option><option value="French">French</option>  </select>
+      </form></div>
+      <div id="subtitle-information-box">
+      <div id="subtitle-information-top"></div>
+      <div id="subtitle-information-center">
+      <div id="subtitle-information-padding">
+      
+      <table cellspacing=0px cellpadding=3px width=100%><tr><td><a href="http://www.subtitlesource.org/download/zip/58699" title="Download subtitle"><img src="http://www.subtitlesource.org/images/download.gif"></a> 69 downloads&nbsp;&nbsp;&nbsp;<img src="http://www.subtitlesource.org/images/time.gif" alt="Date uploaded"> 2010-03-12 21:48:17</td></tr><tr><td><img src="http://www.subtitlesource.org/images/author.png"> Dvarghamstern &nbsp;&nbsp;&nbsp;<img src="http://www.subtitlesource.org/images/comment2.gif">  <a href="http://www.SweSUB.nu" target="_blank" rel="nofollow">www.SweSUB.nu</a></td></tr></table>
+      </div></div><div id="subtitle-information-bottom"></div></div>
+      
+      
+      
+      <br clear="both"><br clear="both">
+      
+      <div style="float:right;padding-right: 8px;"><a href="http://www.swesub.nu/page.php?9" target="_blank"><img src="http://www.subtitlesource.org/images/ssg.jpg"></a></div>
+      
+      
+      
+      <form method="post" name="comment" action="../58699/Heroes.S04E19.720p.HDTV.X264-DIMENSION" style="padding:0;margin:0;"><input type="text" size="12" maxlength="40" name="username" value="Anonymous" style="background: #fff;border:1px solid #bbb; "> Name<br />
+      <textarea name="text" COLS=34 ROWS=4></textarea><br />
+      
+      <input type="hidden" name="url" style="visibility: hidden;">
+      
+      <button onclick="document.comment.submit();">Add comment</button>
+      
+      </form>
+      
+      
+      
+      <br clear="both">
+      
+      <br clear="both">
+      </div>
+      
+      <div id="footerbanner">
+      	<!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT SubtitleSource_728x90_BOTTOM -->
+      	<script type="text/javascript">
+      	  GA_googleFillSlot("SubtitleSource_728x90_BOTTOM");
+      	</script>
+      	<!-- END OF TAG FOR SLOT SubtitleSource_728x90_BOTTOM -->
+      </div>
+      
+      <br class="clear" />
+      
+      <ul id="tag-cloud"><li><a href="http://www.subtitlesource.org/search/Bad+Teacher" title="Bad Teacher subtitles" class="tag0">Bad Teacher</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt773262" title="Dexter subtitles" class="tag0">Dexter</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1462059" title="Falling Skies subtitles" class="tag0">Falling Skies</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1596343" title="Fast Five subtitles" class="tag0">Fast Five</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Futurama" title="Futurama subtitles" class="tag0">Futurama</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt944947" title="Game of Thrones subtitles" class="tag1">Game of Thrones</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt480687" title="Hall Pass subtitles" class="tag0">Hall Pass</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Harry+Potter" title="Harry Potter subtitles" class="tag1">Harry Potter</a></li>
+      <li><a href="http://www.subtitlesource.org/search/House" title="House subtitles" class="tag0">House</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Ironclad" title="Ironclad subtitles" class="tag2">Ironclad</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1564367" title="Just Go With It subtitles" class="tag0">Just Go With It</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1103987" title="Leverage subtitles" class="tag0">Leverage</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1219289" title="Limitless subtitles" class="tag1">Limitless</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Paul" title="Paul subtitles" class="tag0">Paul</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt1192628" title="Rango subtitles" class="tag0">Rango</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Rio" title="Rio subtitles" class="tag1">Rio</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt945513" title="Source Code subtitles" class="tag4">Source Code</a></li>
+      <li><a href="http://www.subtitlesource.org/search/South+Park" title="South Park subtitles" class="tag0">South Park</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt978764" title="Sucker Punch subtitles" class="tag0">Sucker Punch</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt460681" title="Supernatural subtitles" class="tag0">Supernatural</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Top+Gear" title="Top Gear subtitles" class="tag0">Top Gear</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt485301" title="Torchwood subtitles" class="tag0">Torchwood</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Transformers+3" title="Transformers 3 subtitles" class="tag0">Transformers 3</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Transformers" title="Transformers subtitles" class="tag0">Transformers</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt844441" title="True Blood subtitles" class="tag2">True Blood</a></li>
+      <li><a href="http://www.subtitlesource.org/search/True+Grit" title="True Grit subtitles" class="tag0">True Grit</a></li>
+      <li><a href="http://www.subtitlesource.org/search/Unknown" title="Unknown subtitles" class="tag0">Unknown</a></li>
+      <li><a href="http://www.subtitlesource.org/title/tt439100" title="Weeds subtitles" class="tag0">Weeds</a></li>
+      <li><a href="http://www.subtitlesource.org/search/X-men+First+Class" title="X-men First Class subtitles" class="tag3">X-men First Class</a></li>
+      <li><a href="http://www.subtitlesource.org/search/X-men" title="X-men subtitles" class="tag0">X-men</a></li>
+      </ul>
+      <div id="footer">
+      <div style="float:left; padding-top: 5px;">
+      <script type="text/javascript">addthis_pub  = 'Sorku';</script>
+      <a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()" rel="nofollow">
+      <img src="http://s7.addthis.com/button1-share.gif" width="125" height="16" border="0" alt="" /></a>
+      <script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+      </div>
+      
+      <div style="font-size: 10px; position: float; float: right; padding-bottom: 10px; width: 400px; text-align: right; color: #ccc;">
+      <a href="http://addsubtitle.com/" title="add subtitle to movie" target="_blank">How to add subtitle to DVD</a> | 
+      <a href="http://tellspell.com/" title="how to spell" target="_blank">spell checking</a> &nbsp; | &nbsp;
+      <a href="http://www.subtitlesource.org/help/legal" title="Privacy Policy" target="_blank">Privacy Policy</a><a href="http://nyheternadirekt.se" target="_top"> <strong>Dagens Nyheter</strong></a><a href="http://hblogg.se" target="_top"><strong> skapa en BLOGG</strong></a>
+      <span style="font-size: 10px; color: #888;">
+      &copy; 2007-2010 <a href="http://www.subtitlesource.org/" title="Subtitles">SubtitleSource.org</a><br />
+      </span>
+      </div>
+      
+      
+      </div>
+      </div>
+      
+      
+      
+      <!-- ca-pub-1765042858221475/SS-POP -->
+      <script type='text/javascript'>
+      GA_googleFillSlot("SS-POP");
+      </script>
+      </body>
+      </html>
+
+    http_version: "1.1"
