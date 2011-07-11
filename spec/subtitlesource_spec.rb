@@ -117,7 +117,6 @@ describe Subtitlesource do
     end
     
     it "should have a direct download url" do
-      
       sub = @s.imdb("0813715").fetch.first
       
       VCR.use_cassette("0813715-url") do
