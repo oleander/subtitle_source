@@ -1,6 +1,10 @@
 require "spec_helper"
 
 describe Subtitlesource do
+  def did_request?(path)
+    a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/#{path}").should have_been_made.once
+  end
+  
   before(:each) do
     @s = Subtitlesource.new(ENV["API_KEY"])
   end
@@ -16,16 +20,16 @@ describe Subtitlesource do
       VCR.use_cassette("heroes-english") do
         @s.query("heroes").language("English").fetch
       end
-
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/heroes/english/0").should have_been_made.once
+      
+      did_request?("xmlsearch/heroes/english/0")
     end
 
     it "should be possible to search for a query with whitespace" do
       VCR.use_cassette("prison-break-english") do
         @s.query("prison break").language("Swedish").fetch
       end
-
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/prison%20break/swedish/0").should have_been_made.once
+      
+      did_request?("xmlsearch/prison%20break/swedish/0")
     end
 
     it "should be possible to list subtitles for any language" do
@@ -33,15 +37,15 @@ describe Subtitlesource do
         @s.query("Heroes.S03E09.HDTV.XviD-LOL").fetch
       end
 
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL/all/0").should have_been_made.once
+      did_request?("xmlsearch/Heroes.S03E09.HDTV.XviD-LOL/all/0")
     end
 
     it "should list all subtitles related to an imdb id" do
       VCR.use_cassette("imdb-0813715") do
         @s.imdb("0813715").fetch
       end
-
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/0").should have_been_made.once
+      
+      did_request?("xmlsearch/0813715/imdb/0")
     end
     
     it "should be possible to set a page" do
@@ -49,15 +53,15 @@ describe Subtitlesource do
         @s.page(2).imdb("0813715").fetch
       end
 
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
+      did_request?("xmlsearch/0813715/imdb/20")
     end
     
     it "should be able to cache" do
       VCR.use_cassette("imdb-page-2") do
          5.times { @s.page(2).imdb("0813715").fetch }
        end
-
-       a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
+       
+       did_request?("xmlsearch/0813715/imdb/20")
     end
     
     it "should use the current url as cache key" do
@@ -66,8 +70,8 @@ describe Subtitlesource do
         3.times { @s.page(2).imdb("0813715").fetch }
       end
       
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/0").should have_been_made.once
-      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
+      did_request?("xmlsearch/0813715/imdb/0")
+      did_request?("xmlsearch/0813715/imdb/20")
     end
   end
   
