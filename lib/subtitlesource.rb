@@ -13,15 +13,24 @@ class Subtitlesource
   end
   
   def query(query)
-    tap { @query = URI.escape(query) }
+    tap do 
+      @query = URI.escape(query)
+      @imdb = nil
+    end
   end
   
   def language(language)
-    tap { @language = language.to_s.downcase }
+    tap do 
+      @language = language.to_s.downcase
+      @imdb = nil
+    end
   end
   
   def imdb(imdb)
-    tap { @imdb = imdb.to_s.match(/^(tt)?(\d+)/).to_a[2] }
+    tap do 
+      @imdb = imdb.to_s.match(/^(tt)?(\d+)/).to_a[2]
+      @language = nil; @query = nil
+    end
   end
   
   def page(page)
