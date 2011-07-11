@@ -39,7 +39,7 @@ class Subtitlesource
       Nokogiri::XML(get).css("subtitlesource xmlsearch sub").map do |sub|
         subtitle.new(
           sub.at_css("title").content, 
-          sub.at_css("imdb").content, 
+          "tt#{sub.at_css("imdb").content}",
           sub.at_css("id").content.to_i,
           sub.at_css("rid").content.to_i,
           sub.at_css("language").content,

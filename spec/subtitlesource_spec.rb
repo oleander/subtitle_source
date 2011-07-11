@@ -93,5 +93,9 @@ describe Subtitlesource do
       fetch.first.cd.should be_instance_of(Fixnum)
       fetch.first.hi.should be_instance_of(Fixnum)
     end
+    
+    it "should return the correct imdb id" do
+      @s.imdb("0813715").fetch.first.imdb.should match(/^tt\d{4,}$/)
+    end
   end
 end
