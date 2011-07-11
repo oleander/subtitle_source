@@ -1,6 +1,6 @@
-# Movies
+# Subtitlesource
 
-Ruby bindings for [Subtitle Source].
+Ruby bindings for [Subtitle Source](http://www.subtitlesource.org/).
 
 Follow me on [Twitter](http://twitter.com/linusoleander) or [Github](https://github.com/oleander/) for more info and updates.
 
@@ -8,7 +8,7 @@ Follow me on [Twitter](http://twitter.com/linusoleander) or [Github](https://git
 
 ### Request an API key
 
-You can easely request an API key for Subtitle Source [here](http://www.subtitlesource.org/help/contact).
+You can easily request an API key for Subtitle Source [here](http://www.subtitlesource.org/help/contact).
 
 ### Initialize 
 
@@ -30,12 +30,10 @@ Pass your API key to the constructor
 @s.language("english").query("Heroes.S03E09.HDTV.XviD-LOL").fetch
 ````
 
-### Find by imdb id
-
-You can pass an imdb id, **without** the tt-part.
+### Find by IMDb id
 
 ```` ruby
-@s.imdb("0813715").fetch
+@s.imdb("tt0813715").fetch
 ````
 
 ### Specify a page
@@ -43,34 +41,33 @@ You can pass an imdb id, **without** the tt-part.
 If no page is given, the first one will be used.
 
 ```` ruby
-@s.imdb("0813715").page(2).fetch
+@s.imdb("tt0813715").page(2).fetch
 ````
 
 ## Data to work with
 
 These accessors are available for the object that is being returned from the `fetch` method.
 
-- **year** (*Fixnum*) Year of the movie.
-- **released** (*Date*) Release date.
-- **writers** (*Array < String >*) Writers.
-- **actors** (*Array < String>*) Actors.
-- **director** (*String*) Name of director.
-- **rating** (*Float*) Rating from 1.0 to 10.0.
-- **votes** (*Float*) Number of votes.
-- **runtime** (*Fixnum*) Run time in seconds.
-- **href** (*String*) IMDb url.
-- **id** (*String*) IMDb id.
-- **poster** (*String*) Url to poster.
-- **found?** (*Boolean*) Where anything found?
+- **title** (*String*) Movie/TV serie title.
+- **imdb** (*String*) IMDb id.
+- **id** (*Fixnum*) Subtitlesource id.
+- **rid** (*Fixnum*) Same as above, I think.
+- **language** (*String*) Subtitle language.
+- **season** (*Fixnum*) Season for the given TV serie.
+- **episode** (*Fixnum*) Episode for the given TV serie.
+- **releasename** (*String*) Subtitle release name.
+- **fps** (*Fixnum*) Frames per second.
+- **cd** (*Fixnum*) The amount of cd's for the given TV serie.
+- **hi** (*Fixnum*)
 
 ## How to install
 
-    [sudo] gem install movies
+    [sudo] gem install subtitlesource
 
 ## Requirements
 
-*Movies* is tested in *OS X 10.6.7* using Ruby *1.9.2*.
+*Subtitlesource* is tested in *OS X 10.6.8* using Ruby *1.9.2*.
 
 ## License
 
-*Movies* is released under the *MIT license*.
+*Subtitlesource* is released under the *MIT license*.
