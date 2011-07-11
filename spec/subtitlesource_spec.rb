@@ -51,6 +51,24 @@ describe Subtitlesource do
 
       a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
     end
+    
+    it "should be able to cache" do
+      VCR.use_cassette("imdb-page-2") do
+         5.times { @s.page(2).imdb("0813715").fetch }
+       end
+
+       a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
+    end
+    
+    it "should use the current url as cache key" do
+      VCR.use_cassette("imdb-page-2") do
+        3.times { @s.page(1).imdb("0813715").fetch }
+        3.times { @s.page(2).imdb("0813715").fetch }
+      end
+      
+      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/0").should have_been_made.once
+      a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/20").should have_been_made.once
+    end
   end
   
   describe "data" do
