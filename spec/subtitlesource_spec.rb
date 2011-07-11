@@ -94,7 +94,7 @@ describe Subtitlesource do
       fetch.first.language.should be_instance_of(String)
       fetch.first.season.should be_instance_of(Fixnum)
       fetch.first.episode.should be_instance_of(Fixnum)
-      fetch.first.releasename.should be_instance_of(String)
+      fetch.first.release_name.should be_instance_of(String)
       fetch.first.fps.should be_instance_of(Fixnum)
       fetch.first.cd.should be_instance_of(Fixnum)
       fetch.first.hi.should be_instance_of(Fixnum)
@@ -113,7 +113,7 @@ describe Subtitlesource do
         }.should_not raise_error(RestClient::Exception)
       end
       
-      a_request(:get, "http://www.subtitlesource.org/subs/#{sub.id}/#{sub.releasename}").should have_been_made.once      
+      a_request(:get, "http://www.subtitlesource.org/subs/#{sub.id}/#{sub.release_name}").should have_been_made.once      
     end
     
     it "should have a direct download url" do

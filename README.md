@@ -55,7 +55,7 @@ The `fetch` method returns a list for subtitles. Each subtitle has the following
 - **language** (*String*) Subtitle language.
 - **season** (*Fixnum*) Season for the given TV serie.
 - **episode** (*Fixnum*) Episode for the given TV serie.
-- **releasename** (*String*) Subtitle release name.
+- **release_name** (*String*) Subtitle release name.
 - **fps** (*Fixnum*) Frames per second.
 - **cd** (*Fixnum*) The amount of cd's for the given TV serie.
 - **details** (*String*) Url to the details page. [Example](http://www.subtitlesource.org/subs/73538/Source.Code.(2011).DVDRip.XviD-MAXSPEED).

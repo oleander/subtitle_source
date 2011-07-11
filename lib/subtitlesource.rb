@@ -53,7 +53,7 @@ class Subtitlesource
         :language, 
         :season, 
         :episode, 
-        :releasename, 
+        :release_name, 
         :fps, 
         :cd, 
         :hi, 
