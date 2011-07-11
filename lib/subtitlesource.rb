@@ -24,6 +24,10 @@ class Subtitlesource
     tap { @imdb = imdb }
   end
   
+  def page(page)
+    tap { @page = page - 1 }
+  end
+  
   def fetch
     content
   end
@@ -59,6 +63,6 @@ class Subtitlesource
       elsif @imdb
         part = "#{@imdb}/imdb"
       end
-      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{part}/0"
+      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{part}/#{@page.to_i * 20}"
     end
 end
