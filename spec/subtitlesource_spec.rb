@@ -26,4 +26,12 @@ describe Subtitlesource do
     
     a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/prison%20break/swedish/0").should have_been_made.once
   end
+  
+  it "should be possible to list subtitles for any language" do
+    VCR.use_cassette("heroes-any-language-english") do
+      @s.query("Heroes.S03E09.HDTV.XviD-LOL").fetch
+    end
+    
+    a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL/all/0").should have_been_made.once
+  end
 end

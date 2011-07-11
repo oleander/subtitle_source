@@ -1,0 +1,234 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.subtitlesource.org:80/api/jsdSfi33jjaiiiaobgiw/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL//0
+    body: 
+    headers: 
+      accept: 
+      - "*/*; q=0.5, application/xml"
+      accept-encoding: 
+      - gzip, deflate
+      timeout: 
+      - "10"
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 404
+      message: Not Found
+    headers: 
+      date: 
+      - Mon, 11 Jul 2011 12:38:27 GMT
+      server: 
+      - Apache
+      content-length: 
+      - "386"
+      content-type: 
+      - text/html; charset=iso-8859-1
+    body: |
+      <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+      <html><head>
+      <title>404 Not Found</title>
+      </head><body>
+      <h1>Not Found</h1>
+      <p>The requested URL /api/jsdSfi33jjaiiiaobgiw/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL//0 was not found on this server.</p>
+      <p>Additionally, a 404 Not Found
+      error was encountered while trying to use an ErrorDocument to handle the request.</p>
+      </body></html>
+
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.subtitlesource.org:80/api/jsdSfi33jjaiiiaobgiw/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL/all/0
+    body: 
+    headers: 
+      accept: 
+      - "*/*; q=0.5, application/xml"
+      accept-encoding: 
+      - gzip, deflate
+      timeout: 
+      - "10"
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Mon, 11 Jul 2011 12:38:52 GMT
+      server: 
+      - Apache
+      x-powered-by: 
+      - PHP/5.3.6
+      expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma: 
+      - no-cache
+      set-cookie: 
+      - PHPSESSID=a7387f078e13cc7f897494884d257272; path=/
+      transfer-encoding: 
+      - chunked
+      content-type: 
+      - text/xml
+    body: |-
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <subtitlesource>
+      <xmlsearch>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>51442</id>
+      		<rid>51442</rid>
+      		<language>Norwegian</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39649</id>
+      		<rid>39649</rid>
+      		<language>Danish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39170</id>
+      		<rid>39170</rid>
+      		<language>Swedish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39081</id>
+      		<rid>39081</rid>
+      		<language>French</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>38948</id>
+      		<rid>38948</rid>
+      		<language>English</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>38972</id>
+      		<rid>38972</rid>
+      		<language>Finnish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39012</id>
+      		<rid>39012</rid>
+      		<language>Spanish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.HDTV.XviD-LOL</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>45733</id>
+      		<rid>45733</rid>
+      		<language>French</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.720p.HDTV.X264-DIMENSION</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>1</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39167</id>
+      		<rid>39167</rid>
+      		<language>Swedish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.720p.HDTV.X264-DIMENSION</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>38956</id>
+      		<rid>38956</rid>
+      		<language>English</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.720p.HDTV.X264-DIMENSION</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      	<sub>
+      		<title>Heroes</title>
+      		<year>2006</year>
+      		<imdb>0813715</imdb>
+      		<id>39025</id>
+      		<rid>39025</rid>
+      		<language>Finnish</language>
+      		<season>3</season>
+      		<episode>9</episode>
+      		<releasename>Heroes.S03E09.720p.HDTV.X264-DIMENSION</releasename>
+      		<fps>0</fps>
+      		<cd>1</cd>
+      		<hi>0</hi>
+      	</sub>
+      </xmlsearch>
+      </subtitlesource>
+    http_version: "1.1"

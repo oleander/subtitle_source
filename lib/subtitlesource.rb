@@ -25,6 +25,6 @@ class Subtitlesource
   
   private
     def url
-      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{@query}/#{@language}/0"
+      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{@query}/#{@language || "all"}/0"
     end
 end
