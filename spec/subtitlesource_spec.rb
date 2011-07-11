@@ -34,4 +34,12 @@ describe Subtitlesource do
     
     a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/Heroes.S03E09.HDTV.XviD-LOL/all/0").should have_been_made.once
   end
+  
+  it "should list all subtitles related to an imdb id" do
+    VCR.use_cassette("imdb-0813715") do
+      @s.imdb("0813715").fetch
+    end
+    
+    a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/xmlsearch/0813715/imdb/0").should have_been_made.once
+  end
 end

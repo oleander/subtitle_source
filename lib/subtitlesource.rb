@@ -19,12 +19,22 @@ class Subtitlesource
     tap { @language = language.to_s.downcase }
   end
   
+  def imdb(imdb)
+    tap { @imdb = imdb }
+  end
+  
   def fetch
     (@_fetch ||= {})[url] ||= RestClient.get(url, timeout: 10)
   end
   
   private
     def url
-      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{@query}/#{@language || "all"}/0"
+      if @query
+        part = "#{@query}/#{@language || "all"}"
+      elsif @imdb
+        part = "#{@imdb}/imdb"
+      end
+      
+      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{part}/0"
     end
 end
