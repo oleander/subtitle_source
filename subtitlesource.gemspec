@@ -4,7 +4,7 @@ require "subtitlesource/version"
 
 Gem::Specification.new do |s|
   s.name        = "subtitlesource"
-  s.version     = Subtitlesource::VERSION
+  s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Linus Oleander"]
   s.email       = ["linus@oleander.nu"]
