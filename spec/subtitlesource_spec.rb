@@ -101,7 +101,7 @@ describe Subtitlesource do
     end
     
     it "should return the correct imdb id" do
-      @s.imdb("0813715").fetch.first.imdb.should match(/^tt\d{4,}$/)
+      @s.imdb("0813715").fetch.first.imdb.should eq("tt0813715")
     end
   end
 end
