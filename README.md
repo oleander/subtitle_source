@@ -15,25 +15,25 @@ You can easily request an API key for Subtitle Source [here](http://www.subtitle
 Pass your API key to the constructor
 
 ```` ruby
-@s = Subtitlesource.new("6894b779456d330e")
+@subtitles = Subtitlesource.new("6894b779456d330e")
 ````
 
 ### Search for a subtitle
 
 ```` ruby
-@s.query("Heroes.S03E09.HDTV.XviD-LOL").fetch
+@subtitles.query("Heroes.S03E09.HDTV.XviD-LOL").fetch
 ````
 
 ### Search for a subtitle, in a specific language
 
 ```` ruby
-@s.language("english").query("Heroes.S03E09.HDTV.XviD-LOL").fetch
+@subtitles.language("english").query("Heroes.S03E09.HDTV.XviD-LOL").fetch
 ````
 
 ### Find by IMDb id
 
 ```` ruby
-@s.imdb("tt0813715").fetch
+@subtitles.imdb("tt0813715").fetch
 ````
 
 ### Specify a page
@@ -41,12 +41,31 @@ Pass your API key to the constructor
 If no page is given, the first one will be used.
 
 ```` ruby
-@s.imdb("tt0813715").page(2).fetch
+@subtitles.imdb("tt0813715").page(2).fetch
+````
+
+### Find subtitle based on a release name
+
+```` ruby  
+@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS")
+````
+
+### Sensitive
+
+Specify how sensitive the `based_on` method should be, `0.0` to `1.0`. Default is `0.4`.
+
+```` ruby
+@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS", limit: 0.0)
 ````
 
 ## Data to work with
 
 The `fetch` method returns a list for subtitles. Each subtitle has the following accessors.
+
+```` ruby
+@subtitles.imdb("tt0813715").fetch.first.release_name
+# => "Heroes.S03E09.HDTV.XviD-LOL"
+````
 
 - **title** (*String*) Movie/TV serie title.
 - **imdb** (*String*) IMDb id.
