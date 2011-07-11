@@ -1,6 +1,6 @@
 # Subtitle Source
 
-Ruby bindings for [Subtitle Source](http://www.subtitlesource.org/).
+Ruby bindings for [subtitlesource.org](http://www.subtitlesource.org/).
 
 Follow me on [Twitter](http://twitter.com/linusoleander) or [Github](https://github.com/oleander/) for more info and updates.
 
