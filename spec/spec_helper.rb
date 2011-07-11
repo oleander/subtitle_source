@@ -1,6 +1,6 @@
 require "rspec"
 require "webmock/rspec"
-require "subtitlesource"
+require "subtitle_source"
 require "vcr"
 
 RSpec.configure do |config|

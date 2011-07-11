@@ -1,10 +1,10 @@
 require "spec_helper"
 
-describe SubtitlesourceModule::Subtitles do
+describe SubtitleSourceModule::Subtitles do
   use_vcr_cassette "tt0840361"
   
   before(:each) do
-    @subtitles = Subtitlesource.new(ENV["API_KEY"]).imdb("0813715").fetch
+    @subtitles = SubtitleSource.new(ENV["API_KEY"]).imdb("0813715").fetch
   end
   
   it "should have a based_on method" do
@@ -27,7 +27,7 @@ describe SubtitlesourceModule::Subtitles do
   end
   
   it "should return nil if trying to fetch an non existing imdb id" do
-    SubtitlesourceModule::Subtitles.new([]).based_on("some random argument").should be_nil
+    SubtitleSourceModule::Subtitles.new([]).based_on("some random argument").should be_nil
   end
 
   it "should raise an exception when the array does not contain any subtitle objects" do

@@ -1,4 +1,4 @@
-# Subtitlesource
+# Subtitle Source
 
 Ruby bindings for [Subtitle Source](http://www.subtitlesource.org/).
 
@@ -15,7 +15,7 @@ You can easily request an API key for Subtitle Source [here](http://www.subtitle
 Pass your API key to the constructor
 
 ```` ruby
-@subtitles = Subtitlesource.new("6894b779456d330e")
+@subtitles = SubtitleSource.new("6894b779456d330e")
 ````
 
 ### Search for a subtitle
@@ -69,7 +69,7 @@ The `fetch` method returns a list for subtitles. Each subtitle has the following
 
 - **title** (*String*) Movie/TV serie title.
 - **imdb** (*String*) IMDb id.
-- **id** (*Fixnum*) Subtitlesource id.
+- **id** (*Fixnum*) Subtitle Source id.
 - **rid** (*Fixnum*) Same as above, I think.
 - **language** (*String*) Subtitle language.
 - **season** (*Fixnum*) Season for the given TV serie.
@@ -87,8 +87,8 @@ The `fetch` method returns a list for subtitles. Each subtitle has the following
 
 ## Requirements
 
-*Subtitlesource* is tested in *OS X 10.6.8* using Ruby *1.9.2*.
+*Subtitle Source* is tested in *OS X 10.6.8* using Ruby *1.9.2*.
 
 ## License
 
-*Subtitlesource* is released under the *MIT license*.
+*Subtitle Source* is released under the *MIT license*.

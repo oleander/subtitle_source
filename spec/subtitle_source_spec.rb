@@ -1,19 +1,19 @@
 require "spec_helper"
 
-describe Subtitlesource do
+describe SubtitleSource do
   def did_request?(path)
     a_request(:get, "http://www.subtitlesource.org/api/#{@s.api_key}/3.0/#{path}").should have_been_made.once
   end
   
   before(:each) do
-    @s = Subtitlesource.new(ENV["API_KEY"])
+    @s = SubtitleSource.new(ENV["API_KEY"])
   end
   
   describe "requests" do
     it "should raise an error if no key is given" do
       lambda { 
-        Subtitlesource.new(nil)
-      }.should raise_error(ArgumentError, "You must specify an Subtitlesource API key.")
+        SubtitleSource.new(nil)
+      }.should raise_error(ArgumentError, "You must specify an Subtitle Source API key.")
     end
 
     it "should be possible to set a language" do
@@ -86,7 +86,7 @@ describe Subtitlesource do
     it "should return 20 subtitles" do
       fetch = @s.imdb("0813715").fetch
       fetch.count.should eq(20)
-      fetch.should be_instance_of(SubtitlesourceModule::Subtitles)
+      fetch.should be_instance_of(SubtitleSourceModule::Subtitles)
       fetch.first.title.should be_instance_of(String)
       fetch.first.imdb.should be_instance_of(String)
       fetch.first.id.should be_instance_of(Fixnum)

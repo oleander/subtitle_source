@@ -1,6 +1,6 @@
 require 'levenshteinish'
 
-module SubtitlesourceModule
+module SubtitleSourceModule
   class Subtitles < Array
     def based_on(string, args = {})    
       result = self.any? ? self.map do |s|

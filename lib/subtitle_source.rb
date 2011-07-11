@@ -1,15 +1,15 @@
 require "rest_client"
-require "subtitlesource/array"
+require "subtitle_source/array"
 require "nokogiri"
 require "uri"
 
-class Subtitlesource
+class SubtitleSource
   attr_reader :api_key
   
   def initialize(api_key)
     @api_key = api_key
     unless @api_key
-      raise ArgumentError.new("You must specify an Subtitlesource API key.")
+      raise ArgumentError.new("You must specify an Subtitle Source API key.")
     end
   end
   
@@ -79,7 +79,7 @@ class Subtitlesource
         )
       end
       
-      SubtitlesourceModule::Subtitles.new(subtitles)
+      SubtitleSourceModule::Subtitles.new(subtitles)
     end
     
     def get
