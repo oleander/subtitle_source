@@ -21,7 +21,7 @@ class Subtitlesource
   end
   
   def imdb(imdb)
-    tap { @imdb = imdb }
+    tap { @imdb = imdb.to_s.match(/^(tt)?(\d+)/).to_a[2] }
   end
   
   def page(page)
