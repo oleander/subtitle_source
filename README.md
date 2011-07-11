@@ -46,7 +46,7 @@ If no page is given, the first one will be used.
 
 ## Data to work with
 
-These accessors are available for the object that is being returned from the `fetch` method.
+The `fetch` method returns a list for subtitles. Each subtitle has the following accessors.
 
 - **title** (*String*) Movie/TV serie title.
 - **imdb** (*String*) IMDb id.
