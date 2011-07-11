@@ -110,10 +110,23 @@ describe Subtitlesource do
       VCR.use_cassette("0813715-details") do
         lambda {
           RestClient.get(sub.details)
-        }.should_not raise_error
+        }.should_not raise_error(RestClient::Exception)
       end
       
       a_request(:get, "http://www.subtitlesource.org/subs/#{sub.id}/#{sub.releasename}").should have_been_made.once      
+    end
+    
+    it "should have a direct download url" do
+      
+      sub = @s.imdb("0813715").fetch.first
+      
+      VCR.use_cassette("0813715-url") do
+        lambda {
+          RestClient.get(sub.url)
+        }.should_not raise_error(RestClient::Exception)
+      end
+      
+      a_request(:get, "http://www.subtitlesource.org/download/zip/#{sub.id}").should have_been_made.once
     end
   end
 end
