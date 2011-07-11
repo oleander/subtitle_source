@@ -46,7 +46,7 @@ If no page is given, the first one will be used.
 
 ### Find subtitle based on a release name
 
-```` ruby  
+```` ruby
 @subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS")
 ````
 
