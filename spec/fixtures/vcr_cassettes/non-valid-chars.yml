@@ -1,0 +1,43 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://www.subtitlesource.org:80/api/jsdSfi33jjaiiiaobgiw/3.0/xmlsearch/%5B%5D/all/0
+    body: 
+    headers: 
+      accept: 
+      - "*/*; q=0.5, application/xml"
+      accept-encoding: 
+      - gzip, deflate
+      timeout: 
+      - "10"
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Tue, 12 Jul 2011 15:16:44 GMT
+      server: 
+      - Apache
+      x-powered-by: 
+      - PHP/5.3.6
+      expires: 
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control: 
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma: 
+      - no-cache
+      set-cookie: 
+      - PHPSESSID=b08ca7f6c43e0b71aa3a9e898fdcee2b; path=/
+      transfer-encoding: 
+      - chunked
+      content-type: 
+      - text/xml
+    body: |-
+      <?xml version="1.0" encoding="UTF-8" ?>
+      <subtitlesource>
+      <xmlsearch>
+      </xmlsearch>
+      </subtitlesource>
+    http_version: "1.1"

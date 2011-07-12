@@ -127,5 +127,13 @@ describe SubtitleSource do
       
       a_request(:get, "http://www.subtitlesource.org/download/zip/#{sub.id}").should have_been_made.once
     end
+    
+    it "should escape non valid chars in url" do
+      VCR.use_cassette("non-valid-chars") do
+        @s.query("[]").fetch
+      end
+
+      did_request?("xmlsearch/%5B%5D/all/0")
+    end
   end
 end

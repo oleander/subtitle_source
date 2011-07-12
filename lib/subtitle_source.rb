@@ -2,6 +2,7 @@ require "rest_client"
 require "subtitle_source/array"
 require "nokogiri"
 require "uri"
+require "cgi"
 
 class SubtitleSource
   attr_reader :api_key
@@ -92,6 +93,9 @@ class SubtitleSource
       elsif @imdb
         part = "#{@imdb}/imdb"
       end
-      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{part}/#{@page.to_i * 20}"
+      
+      "http://www.subtitlesource.org/api/#{@api_key}/3.0/xmlsearch/#{part}/#{@page.to_i * 20}".gsub(/\{|\}|\||\\|\^|\[|\]|\`|\s+/) do |m| 
+        CGI::escape(m)
+      end
     end
 end
