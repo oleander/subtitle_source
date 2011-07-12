@@ -79,6 +79,14 @@ describe SubtitleSource do
       did_request?("xmlsearch/0813715/imdb/0")
       did_request?("xmlsearch/0813715/imdb/20")
     end
+    
+    it "should escape non valid chars in url" do
+      VCR.use_cassette("non-valid-chars") do
+        @s.query("[]").fetch
+      end
+
+      did_request?("xmlsearch/%5B%5D/all/0")
+    end
   end
   
   describe "data" do
@@ -126,14 +134,6 @@ describe SubtitleSource do
       end
       
       a_request(:get, "http://www.subtitlesource.org/download/zip/#{sub.id}").should have_been_made.once
-    end
-    
-    it "should escape non valid chars in url" do
-      VCR.use_cassette("non-valid-chars") do
-        @s.query("[]").fetch
-      end
-
-      did_request?("xmlsearch/%5B%5D/all/0")
     end
   end
 end
