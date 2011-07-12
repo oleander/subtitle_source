@@ -8,11 +8,12 @@ Follow me on [Twitter](http://twitter.com/linusoleander) or [Github](https://git
 
 ### Request an API key
 
-You can easily request an API key for Subtitle Source [here](http://www.subtitlesource.org/help/contact).
+You can easily request an API key at the [Subtitle Source API page](http://www.subtitlesource.org/help/contact).
 
 ### Initialize 
 
-Pass your API key to the constructor
+Pass your API key to the constructor.  
+*This is just an example.*
 
 ```` ruby
 @subtitles = SubtitleSource.new("6894b779456d330e")
@@ -24,7 +25,7 @@ Pass your API key to the constructor
 @subtitles.query("Heroes.S03E09.HDTV.XviD-LOL").fetch
 ````
 
-### Search for a subtitle, in a specific language
+### Specify a language
 
 ```` ruby
 @subtitles.language("english").query("Heroes.S03E09.HDTV.XviD-LOL").fetch
@@ -38,7 +39,8 @@ Pass your API key to the constructor
 
 ### Specify a page
 
-If no page is given, the first one will be used.
+Default is *1*.  
+*20* results per page.
 
 ```` ruby
 @subtitles.imdb("tt0813715").page(2).fetch
@@ -47,7 +49,8 @@ If no page is given, the first one will be used.
 ### Find subtitle based on a release name
 
 ```` ruby
-@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS")
+@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS").title
+# => "The Town"
 ````
 
 ### Sensitive
@@ -55,7 +58,8 @@ If no page is given, the first one will be used.
 Specify how sensitive the `based_on` method should be, `0.0` to `1.0`. Default is `0.4`.
 
 ```` ruby
-@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS", limit: 0.0)
+@subtitles.imdb("tt0813715").fetch.based_on("The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS", limit: 0.0).release_name
+# => "The Town EXTENDED 2010 480p BRRip XviD AC3 FLAWL3SS"
 ````
 
 ## Data to work with
