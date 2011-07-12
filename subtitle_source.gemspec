@@ -11,8 +11,6 @@ Gem::Specification.new do |s|
   s.summary     = %q{Ruby bindings for subtitlesource.org}
   s.description = %q{Ruby bindings for subtitlesource.org.}
 
-  s.rubyforge_project = "subtitlesource"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
